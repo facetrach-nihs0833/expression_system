@@ -129,6 +129,8 @@ while True:
             time.sleep(0.1)            
             jason=updata_image()                      
             llist,world=llistyaya(jason)
+            label.configure(text = f"目前面部表情{world}")
+            label2.configure(text = f"目前最大值{llist}")
             
 
     if anterior != len(faces):
