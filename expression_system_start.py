@@ -7,7 +7,7 @@ import datetime as dt
 import logging as log
 from package.list import llistyaya
 from package.update import updata_image
-
+from package.update import pysound
 #opencv 基礎設定
 cv2.useOptimized()
 cascPath = (r"haarcascade_frontalface_default.xml")
@@ -50,7 +50,6 @@ class ipcamCapture:
 		
 	#攝影機連接。
         self.video_capture = cv2.VideoCapture(URL)
-
     def start(self):
 	#把程式放進子執行緒
         print('ipcam started!')
@@ -78,6 +77,8 @@ ipcam = ipcamCapture(1)
 #啟動搂!
 ipcam.start()
 
+lol = playy("start.wav")
+lol.start()
 #填充影像
 time.sleep(1)
 
@@ -116,8 +117,7 @@ while True:
         #顯示綠色線條
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
         #寫入照片
-        cv2.imwrite(r"image\0.jpg",output)
-        
+        cv2.imwrite(r"image\0.jpg",output)        
         #顯示文字
         cv2.putText(frame, world+" "+str(llist), (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2, 4)  
         cv2.imwrite(r"image\face.jpg",frame)      
@@ -130,8 +130,8 @@ while True:
             jason=updata_image()                      
             llist,world=llistyaya(jason)
             label.configure(text = f"目前面部表情{world}")
-            label2.configure(text = f"目前最大值{llist}")
-            
+            label2.configure(text = f"目前最大值{llist}")            
+
 
     if anterior != len(faces):
         anterior = len(faces)

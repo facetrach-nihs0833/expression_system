@@ -1,1 +1,23 @@
-[{"faceId": "c7863419-72cc-4b68-aa32-6a66cd4abd4e", "faceRectangle": {"top": 99, "left": 159, "width": 299, "height": 299}, "faceAttributes": {"emotion": {"anger": 0.0, "contempt": 0.016, "disgust": 0.0, "fear": 0.0, "happiness": 0.0, "neutral": 0.978, "sadness": 0.005, "surprise": 0.0}}}]
+[
+    {
+       "faceId":"c7863419-72cc-4b68-aa32-6a66cd4abd4e",
+       "faceRectangle":{
+          "top":99,
+          "left":159,
+          "width":299,
+          "height":299
+       },
+       "faceAttributes":{
+          "emotion":{
+             "anger":0.0,
+             "contempt":0.016,
+             "disgust":0.0,
+             "fear":0.0,
+             "happiness":0.0,
+             "neutral":0.978,
+             "sadness":0.005,
+             "surprise":0.0
+          }
+       }
+    }
+ ]

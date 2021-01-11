@@ -1,5 +1,5 @@
 import json
-
+from update import pysound
 
 def llistyaya(jason):
     i=0;anger2=0;contempt2=0;disgust2=0;fear2=0;happiness2=0;neutral2=0;sadness2=0;surprise2=0
@@ -31,19 +31,27 @@ def llistyaya(jason):
     
     if anger2==llist:
         world="anger"
+        ps=playy("sound/angry.wav")
     if contempt2==llist:
         world="contempt"
+        ps=playy("sound/contempt.wav")
     if disgust2==llist:
-        world="disgust"    
+        world="disgust"
+        ps=playy("sound/disgust.wav")    
     if fear2==llist:
         world="fear"
+        ps=playy("sound/fear.wav")
     if happiness2==llist:
         world="happiness"
+        ps=playy("sound/happy.wav")
     if neutral2==llist:
-        world="neutral"    
+        world="neutral"
+        ps=playy("sound/neutral.wav")    
     if sadness2==llist:
-        world="sadness"    
+        world="sadness"
+        ps=playy("sound/sad.wav")    
     if surprise2==llist:
         world="surprise"
-    
+        ps=playy("sound/surprise.wav")
+    ps.start()
     return llist,world
