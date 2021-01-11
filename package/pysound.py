@@ -13,7 +13,7 @@ class playy:
     def playsound(self):    
         print("thatme")
         print(self.playsong)
-        while True:
-            print("dick")
-            playsound(self.playsong,'wav')    
+        
+        print("dick")
+        playsound(self.playsong,'mp3')    
 

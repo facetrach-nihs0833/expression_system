@@ -7,7 +7,7 @@ import datetime as dt
 import logging as log
 from package.list import llistyaya
 from package.update import updata_image
-from package.update import pysound
+from package.pysound import playy
 #opencv 基礎設定
 cv2.useOptimized()
 cascPath = (r"haarcascade_frontalface_default.xml")
@@ -77,7 +77,7 @@ ipcam = ipcamCapture(1)
 #啟動搂!
 ipcam.start()
 
-lol = playy("start.wav")
+lol = playy("sound/start.mp3")
 lol.start()
 #填充影像
 time.sleep(1)

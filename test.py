@@ -12,11 +12,10 @@ class playy:
 
     def playsound(self):    
         print("thatme")
-        print(self.playsong)
-        while True:
-            print("dick")
-            playsound(self.playsong,'mp3')    
-np=input("fuck")
-lol = playy(np)
+        print(self.playsong)        
+        print("dick")
+        playsound(self.playsong,'mp3')    
+
+lol = playy("sound\start.mp3")
 
 lol.start()
