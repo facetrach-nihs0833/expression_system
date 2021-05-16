@@ -1,5 +1,5 @@
 import json
-import pysound 
+from package.pysound import playy
 
 def llistyaya(jason):
     i=0;anger2=0;contempt2=0;disgust2=0;fear2=0;happiness2=0;neutral2=0;sadness2=0;surprise2=0

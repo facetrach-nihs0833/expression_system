@@ -49,7 +49,8 @@ class ipcamCapture:
         self.isstop = False
 		
 	#攝影機連接。
-        self.video_capture = cv2.VideoCapture(URL)
+        self.video_capture =cv2.VideoCapture(0, cv2.CAP_DSHOW)
+        #self.video_capture = cv2.VideoCapture(URL)
     def start(self):
 	#把程式放進子執行緒
         print('ipcam started!')

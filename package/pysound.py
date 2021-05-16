@@ -1,3 +1,4 @@
+#!/usr/bin/python3.9
 from playsound import playsound
 import threading
 

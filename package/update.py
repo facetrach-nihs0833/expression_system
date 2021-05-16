@@ -5,7 +5,7 @@ import requests
 
 #image updata setting
 CLIENT_ID = "a9dba5d23914502"
-PATH = r"image\0.jpg" #A Filepath to an image on your computer"
+PATH = r"image/0.jpg" #A Filepath to an image on your computer"
 title = "az"
 im = pyimgur.Imgur(CLIENT_ID)
 uploaded_image = im.upload_image(PATH, title=title) 
