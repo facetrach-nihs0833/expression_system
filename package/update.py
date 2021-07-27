@@ -4,14 +4,14 @@ import requests
 
 
 #image updata setting
-CLIENT_ID = "a9dba5d23914502"
+CLIENT_ID = "your ID"
 PATH = r"image/0.jpg" #A Filepath to an image on your computer"
 title = "az"
 im = pyimgur.Imgur(CLIENT_ID)
 uploaded_image = im.upload_image(PATH, title=title) 
 
 #azure setting
-subscription_key = 'dfbde64e106b449e9fb3a45bd626e9f1'
+subscription_key = 'your key'
 assert subscription_key
 
 #azure api
